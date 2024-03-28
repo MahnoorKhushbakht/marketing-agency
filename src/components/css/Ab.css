@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .contact-card {
+      padding: 10px;
+      max-width: 100px; /* Reduce max-width for smaller screens */
+    max-height: 100px; /* Reduce max-height for smaller screens */
+    }
+  
+    .contact-text {
+      display: none;
+    }
+  }
+  
