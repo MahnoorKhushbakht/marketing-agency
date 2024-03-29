@@ -8,18 +8,18 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 export default function SocialNav() {
   const handleFacebookClick = () => {
-    window.open('https://www.facebook.com/mahnoor.khushbakht?mibextid=ZbWKwL', '_blank');
+    window.open('https://www.facebook.com/neskomedia', '_blank');
   };
 
   const handleInstagramClick = () => {
-    window.open('https://instagram.com/noor_khushbakht?igshid=OGQ5ZDc2ODk2ZA==', '_blank');
+    window.open('https://www.instagram.com/neskomedia.pk/', '_blank');
   };
   const handleLinkedinClick = () => {
-    window.open('http://www.linkedin.com/in/mahnoorkhushbakht', '_blank');
+    window.open('https://www.linkedin.com/company/nesko-media', '_blank');
   };
 
   const handleMailClick = () => {
-    window.location.href = 'mailto:mahnoorkhushbakht@gmail.com';
+    window.location.href = 'mailto:neskomedia01@gmail.com';
   };
  
 
@@ -27,16 +27,16 @@ export default function SocialNav() {
 
   return (
     <Box sx={{ '& > :not(style)': { m: 2 } }}>
-      <Fab size='medium' backgroundColor="red"  aria-label="Facebook" onClick={handleFacebookClick}>
+      <Fab size='medium' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Facebook" onClick={handleFacebookClick}>
         <FacebookIcon />
       </Fab>
-      <Fab size='medium' aria-label="Instagram" onClick={handleInstagramClick}>
+      <Fab size='medium' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Instagram" onClick={handleInstagramClick}>
         <InstagramIcon />
       </Fab>
-      <Fab size='medium' aria-label="Linkedin" onClick={handleLinkedinClick}>
+      <Fab size='medium' style={{ backgroundColor:"#f8d022",color:'black'}}aria-label="Linkedin" onClick={handleLinkedinClick}>
         <LinkedInIcon />
       </Fab>
-      <Fab size='medium' aria-label="Mail" onClick={handleMailClick}>
+      <Fab size='medium' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Mail" onClick={handleMailClick}>
         <MailOutlineIcon />
       </Fab>
     </Box>

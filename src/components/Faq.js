@@ -4,11 +4,21 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import Typewriter from 'typewriter-effect';
 export default function Faq() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    <Typography  sx={{ fontSize: { xs: '20px', md: '25px' },boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} marginBottom={6} color='white'>Frequently asked Questions</Typography>
+    <div id="faq" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <Typography  sx={{ fontSize: { xs: '20px', md: '25px' }}} marginBottom={6} color='white'>
+      <Typewriter 
+ onInit={(typewriter) => {
+     typewriter
+         .typeString("Frequently asked Questions")
+         .pauseFor(3000)
+         .start();
+ }}
+
+/>
+      </Typography>
       <Accordion defaultExpanded style={{ width: '80%', maxWidth: '600px', backgroundColor: 'black', marginBottom: '10px' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon style={{color:'#f8d022'}}/>}

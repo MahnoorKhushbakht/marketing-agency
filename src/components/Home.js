@@ -9,7 +9,7 @@ export default function Home(){
         <ChakraProvider>
         <Container marginTop='150px' color='black' height='100vh' centerContent>
         <VStack>
-        <Heading className='animate__animated animate__fadeInDown'>Digital Marketing that gets you more customers</Heading>
+        <Heading className='animate__animated animate__fadeInDown'>Fueling Your Business Growth in the Digital Age</Heading>
         <Text className='animate__animated animate__fadeIn' fontSize='md'> From innovative digital campaigns to captivating design and strategic consulting, we're here to bring your vision to life and propel your business forward. Explore our services and let's collaborate to unlock your brand's full potential today</Text>
         <Buttons/>
         </VStack>
@@ -17,3 +17,6 @@ export default function Home(){
         </ChakraProvider>
         </div>
     )}
+
+
+    

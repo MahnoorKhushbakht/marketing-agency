@@ -1,11 +1,10 @@
-import { Card, CardHeader, CardBody, CardFooter,Flex,Avatar,IconButton,Box,Heading,Text,Button } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter,Flex,Box,Heading,Text,Button } from '@chakra-ui/react'
 import { BiLike, BiChat,BiShare } from 'react-icons/bi'
-import { BsThreeDotsVertical } from 'react-icons/bs';
 import { ChakraProvider } from '@chakra-ui/react';
 export default function Reviews(){
   return(
     <ChakraProvider>
-  <div id="review" height="100vh" >
+  <div id="tweet" height="100vh" >
   <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh" marginTop='100px'  marginBottom='20px'>
     <Card backgroundColor='black' sx={{width: { base: '85%', sm: '85%', md: '60%', lg: '50%' }}}>
   <CardHeader>
@@ -15,14 +14,14 @@ export default function Reviews(){
 
         <Box>
           <Heading color='white' size='sm' textAlign='left' >Elon Musk</Heading>
-          <Text color='white' fontSize={{ base: "12px", md: "12px", lg: "16px" }}>CEO of Tesla Motors</Text>
+          <Text color='white' fontSize={{ base: "14x", md: "14px", lg: "18px" }}>CEO of Tesla Motors</Text>
         </Box>
       </Flex>
 <Text style={{ color:'white'}}>May 1, 2022</Text>
     </Flex>
   </CardHeader>
   <CardBody>
-    <Text color='white' display='flex' alignContent='left' textAlign='left' fontSize={{ base: "14px", md: "14px", lg: "16px" }}>
+    <Text color='white' display='flex' alignContent='left' textAlign='left' fontSize={{ base: "16px", md: "16px", lg: "18px" }}>
         Since I’ve been asked a lot:<br/><br/>
         Buy stock in several companies that make products & services that you believe in.<br/><br/>
         Only sell if you think their products & services are trending worse. Don’t panic when the market does.<br/><br/>
