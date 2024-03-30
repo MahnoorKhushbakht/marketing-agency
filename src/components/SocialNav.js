@@ -14,6 +14,7 @@ export default function SocialNav() {
   const handleInstagramClick = () => {
     window.open('https://www.instagram.com/neskomedia.pk/', '_blank');
   };
+  
   const handleLinkedinClick = () => {
     window.open('https://www.linkedin.com/company/nesko-media', '_blank');
   };
@@ -21,25 +22,61 @@ export default function SocialNav() {
   const handleMailClick = () => {
     window.location.href = 'mailto:neskomedia01@gmail.com';
   };
- 
-
-
 
   return (
     <Box sx={{ '& > :not(style)': { m: 2 } }}>
-      <Fab size='sm' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Facebook" onClick={handleFacebookClick}>
+      <Fab
+        size="small"
+        sx={{
+          width: {  sm: '32px' ,md:'50px'},
+          height: {  sm: '32px' ,md:'50px'},
+          '& svg': { fontSize: { xs: '20px', sm: '30px' } }
+        }}
+        style={{ backgroundColor: "#f8d022", color: 'black' }}
+        aria-label="Facebook"
+        onClick={handleFacebookClick}
+      >
         <FacebookIcon />
       </Fab>
-      <Fab size='sm' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Instagram" onClick={handleInstagramClick}>
+      <Fab
+        size="small"
+        sx={{
+          width: {  sm: '32px' ,md:'50px'},
+          height: {  sm: '32px' ,md:'50px'},
+          '& svg': { fontSize: { xs: '20px', sm: '30px' } }
+        }}
+        style={{ backgroundColor: "#f8d022", color: 'black' }}
+        aria-label="Instagram"
+        onClick={handleInstagramClick}
+      >
         <InstagramIcon />
       </Fab>
-      <Fab size='sm' style={{ backgroundColor:"#f8d022",color:'black'}}aria-label="Linkedin" onClick={handleLinkedinClick}>
+      <Fab
+        size="small"
+        sx={{
+          width: {  sm: '32px' ,md:'50px'},
+          height: {  sm: '32px' ,md:'50px'},
+          '& svg': { fontSize: { xs: '20px', sm: '30px' } }
+        }}
+        style={{ backgroundColor: "#f8d022", color: 'black' }}
+        aria-label="Linkedin"
+        onClick={handleLinkedinClick}
+      >
         <LinkedInIcon />
       </Fab>
-      <Fab size='sm' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Mail" onClick={handleMailClick}>
+      <Fab
+        size="small"
+        sx={{
+          width: {  sm: '32px' ,md:'50px'},
+          height: {  sm: '32px' ,md:'50px'},
+          '& svg': { fontSize: { xs: '20px', sm: '30px' } }
+        }}
+        style={{ backgroundColor: "#f8d022", color: 'black' }}
+        aria-label="Mail"
+        onClick={handleMailClick}
+      >
         <MailOutlineIcon />
       </Fab>
     </Box>
   );
 }
-
