@@ -13,7 +13,7 @@ export default function Ab() {
     window.location.href = 'tel:+923483715545';
   };
   const handleWhatsappClick = () => {
-    window.open('whatsapp://send?phone=+2349065956246', '_blank');
+    window.open('whatsapp://send?phone=+923483715545', '_blank');
   };
   return (
     <Row xs={3} md={3} className="g-4">
