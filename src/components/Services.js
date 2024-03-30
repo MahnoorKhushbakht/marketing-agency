@@ -8,6 +8,7 @@ import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import 'aos/dist/aos.css';
 import 'animate.css';
 
 const cardData = [
@@ -46,7 +47,7 @@ function Services() {
         <Row xs={1} md={2} className="g-4">
           {cardData.map((card, idx) => (
             <Col key={idx} className="d-flex align-items-stretch">
-              <Card className='animate__animated animate__headShake' style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', color: 'white', backgroundColor: '#000000' }}>
+              <Card data-aos="fade-up" data-aos-delay={(idx + 1) * 400}  className='animate__animated animate__headShake' style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', color: 'white', backgroundColor: '#000000' }}>
                 {card.icon}
                 <Card.Body>
                   <Card.Title>{card.title}</Card.Title>

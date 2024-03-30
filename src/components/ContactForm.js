@@ -152,7 +152,6 @@ const Contact = () => {
                         as={TextField}
                         label="Message"
                         multiline
-                        rows={4}
                         variant="filled"
                         margin="dense"
                         fullWidth
