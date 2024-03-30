@@ -27,16 +27,16 @@ export default function SocialNav() {
 
   return (
     <Box sx={{ '& > :not(style)': { m: 2 } }}>
-      <Fab size='medium' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Facebook" onClick={handleFacebookClick}>
+      <Fab size='sm' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Facebook" onClick={handleFacebookClick}>
         <FacebookIcon />
       </Fab>
-      <Fab size='medium' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Instagram" onClick={handleInstagramClick}>
+      <Fab size='sm' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Instagram" onClick={handleInstagramClick}>
         <InstagramIcon />
       </Fab>
-      <Fab size='medium' style={{ backgroundColor:"#f8d022",color:'black'}}aria-label="Linkedin" onClick={handleLinkedinClick}>
+      <Fab size='sm' style={{ backgroundColor:"#f8d022",color:'black'}}aria-label="Linkedin" onClick={handleLinkedinClick}>
         <LinkedInIcon />
       </Fab>
-      <Fab size='medium' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Mail" onClick={handleMailClick}>
+      <Fab size='sm' style={{ backgroundColor:"#f8d022",color:'black'}} aria-label="Mail" onClick={handleMailClick}>
         <MailOutlineIcon />
       </Fab>
     </Box>

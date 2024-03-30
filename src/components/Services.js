@@ -9,6 +9,7 @@ import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import 'animate.css';
+
 const cardData = [
   {
     title: "Website Designer",
@@ -34,18 +35,18 @@ const cardData = [
 
 function Services() {
   return (
-    <Box id="services" display="flex" flexDirection='column' marginBottom={'200px'} justifyContent="center" alignItems="center" height='100vh'>
-      <Typography sx={{ fontSize: { xs: '20px', md: '25px' },boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} color={'white'} variant="h5" fontWeight='bold' marginBottom={'10px'} fontFamily="'Rubik', sans-serif">
+    <Box id="services" minHeight="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="white">
+      <Typography sx={{ fontSize: { xs: '20px', md: '25px' }}} color={'white'} variant="h5" fontWeight='bold' marginBottom={'10px'} fontFamily="'Rubik', sans-serif">
         How can I assist?
       </Typography>
-      <Typography sx={{ fontSize: { xs: '15px', md: '20px' },boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} color={'rgba(255, 255, 255, 0.856)'} variant="h6" fontStyle='italic' marginBottom={'10px'} fontFamily="'Rubik', sans-serif">
+      <Typography sx={{ fontSize: { xs: '15px', md: '20px' }}} color={'rgba(255, 255, 255, 0.856)'} variant="h6" fontStyle='italic' marginBottom={'10px'} fontFamily="'Rubik', sans-serif">
         Empowering businesses with innovative digital strategies
       </Typography>
       <Container className="mt-4">
         <Row xs={1} md={2} className="g-4">
           {cardData.map((card, idx) => (
-            <Col key={idx}>
-              <Card className='animate__animated animate__headShake' style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' ,color: 'white',backgroundColor:'#000000'}}>
+            <Col key={idx} className="d-flex align-items-stretch">
+              <Card className='animate__animated animate__headShake' style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', color: 'white', backgroundColor: '#000000' }}>
                 {card.icon}
                 <Card.Body>
                   <Card.Title>{card.title}</Card.Title>

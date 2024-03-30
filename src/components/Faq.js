@@ -7,13 +7,15 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typewriter from 'typewriter-effect';
 export default function Faq() {
   return (
-    <div id="faq" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <div id="faq" minHeight='100vh' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
     <Typography  sx={{ fontSize: { xs: '20px', md: '25px' }}} marginBottom={6} color='white'>
       <Typewriter 
  onInit={(typewriter) => {
      typewriter
          .typeString("Frequently asked Questions")
          .pauseFor(3000)
+         .deleteAll()
+         .typeString("Frequently asked Questions")
          .start();
  }}
 
