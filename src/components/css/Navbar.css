@@ -1,0 +1,13 @@
+.header {
+  background-color: rgba(248, 209, 34, 0.533); 
+  backdrop-filter: blur(10px); 
+  color:black;
+}
+
+@media (max-width: 576px) {
+  .header {
+    background-color: rgba(248, 209, 34, 0.533); 
+    backdrop-filter: blur(10px); 
+    color:black;
+  }
+}

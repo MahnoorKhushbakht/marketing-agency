@@ -7,7 +7,6 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { ThemeProvider, useTheme } from '@mui/material/styles';
 import customTheme from './theme';
-import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import axios from 'axios';
@@ -179,23 +178,24 @@ const Contact = () => {
                       </ErrorMessage>
                     </div>
                   </ThemeProvider>
-                  <Button
-                    type="submit"
-                    sx={{
-                      background: '#f8d022',
-                      color: 'black',
-                      '&:hover': {
-                        background: 'white',
-                        color: 'black',
-                      },
-                      marginTop: '16px',
-                      fontFamily: "'Rubik', sans-serif",
-                    }}
-                    variant="contained"
-                    disabled={!isValid}
-                  >
-                    {isLoading ? 'Submitting...' : 'Submit'}
-                  </Button>
+                  <button
+  type="submit"
+  style={{
+    background: '#f8d022',
+    color: 'black',
+    border: 'none',
+    padding: '10px 20px',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    marginTop: '16px',
+    fontFamily: "'Rubik', sans-serif",
+    opacity: isValid ? 1 : 0.5,
+  }}
+  disabled={!isValid}
+>
+  {isLoading ? 'Loading...' : 'Submit'}
+</button>
+
                   <Snackbar
                     open={isSuccess}
                     autoHideDuration={6000}
@@ -205,7 +205,7 @@ const Contact = () => {
                     <Alert severity="success" 
     sx={{
       backgroundColor: '#f8d022',  
-      color: 'rgba(255, 255, 255, 0.856)', 
+      color: 'black', 
       fontFamily: "'Rubik', sans-serif",          
       '& .MuiAlert-icon': {
         color: 'green',        
@@ -226,7 +226,7 @@ const Contact = () => {
     severity="error"
     sx={{
       backgroundColor: '#f8d022',  
-      color: 'rgba(255, 255, 255, 0.856)', 
+      color: 'black', 
       fontFamily: "'Rubik', sans-serif",           
       '& .MuiAlert-icon': {
         color: 'red',  

@@ -2,11 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import './css/Header.css'; 
+import './css/Navbar.css'; 
 
 function Header() {
   return (
-    <Navbar expand="lg" className="header" sticky='top' variant='light'> 
+    <Navbar expand="lg" sticky='top' className="header" > 
       <Container>
         <Navbar.Brand href="#home">NESKO MEDIA</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -14,7 +14,7 @@ function Header() {
           <Nav className="me-auto">
             <Nav.Link href="#services">Services</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <NavDropdown  title="More" id="basic-nav-dropdown">
+            <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item href="#about">About</NavDropdown.Item>
               <NavDropdown.Item href="#review">Reviews</NavDropdown.Item>
               <NavDropdown.Item href="#faq">FAQs</NavDropdown.Item>
