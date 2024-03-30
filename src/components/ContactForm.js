@@ -32,8 +32,7 @@ const Contact = () => {
     setIsLoading(true);
   
     axios
-      // .post(`${apiUrl}/contactme`, formData)
-      .post('http://localhost:3001/contactme', formData)
+      .post(`${apiUrl}/contactme`, formData)
       .then((res) => {
         setIsSuccess(true);
         resetFormFields();
