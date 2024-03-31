@@ -47,7 +47,7 @@ function Services() {
         <Row xs={1} md={2} className="g-4">
           {cardData.map((card, idx) => (
             <Col key={idx} className="d-flex align-items-stretch">
-              <Card data-aos="fade-up" data-aos-delay={(idx + 1) * 400}  className='animate__animated animate__headShake' style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', color: 'white', backgroundColor: '#000000' }}>
+              <Card data-aos="fade-up" data-aos-delay={(idx + 1) * 100}  className='animate__animated animate__headShake' style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', color: 'white', backgroundColor: '#000000' }}>
                 {card.icon}
                 <Card.Body>
                   <Card.Title>{card.title}</Card.Title>
