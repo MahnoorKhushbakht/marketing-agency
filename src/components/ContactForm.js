@@ -64,7 +64,6 @@ const Contact = () => {
         <Card
           variant="filled"
           sx={cardStyle}
-         style={{ marginLeft: '20px' }}
         >
           <CardContent>
             <Typography sx={{ fontSize: { xs: '25px', md: '35px' } }} color={'white'}  marginBottom={'15px'} fontFamily= "'Rubik', sans-serif">
