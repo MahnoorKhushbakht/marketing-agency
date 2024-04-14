@@ -28,8 +28,8 @@ export default function SocialNav() {
       <Fab
         size="small"
         sx={{
-          width: {  sm: '32px' ,md:'50px'},
-          height: {  sm: '32px' ,md:'50px'},
+          width: {  sm: '32px' ,md:'40px'},
+          height: {  sm: '32px' ,md:'40px'},
           '& svg': { fontSize: { xs: '20px', sm: '30px' } }
         }}
         style={{ backgroundColor: "#f8d022", color: 'black' }}
@@ -41,8 +41,8 @@ export default function SocialNav() {
       <Fab
         size="small"
         sx={{
-          width: {  sm: '32px' ,md:'50px'},
-          height: {  sm: '32px' ,md:'50px'},
+          width: {  sm: '32px' ,md:'40px'},
+          height: {  sm: '32px' ,md:'40px'},
           '& svg': { fontSize: { xs: '20px', sm: '30px' } }
         }}
         style={{ backgroundColor: "#f8d022", color: 'black' }}
@@ -54,8 +54,8 @@ export default function SocialNav() {
       <Fab
         size="small"
         sx={{
-          width: {  sm: '32px' ,md:'50px'},
-          height: {  sm: '32px' ,md:'50px'},
+          width: {  sm: '32px' ,md:'40px'},
+          height: {  sm: '32px' ,md:'40px'},
           '& svg': { fontSize: { xs: '20px', sm: '30px' } }
         }}
         style={{ backgroundColor: "#f8d022", color: 'black' }}
@@ -67,8 +67,8 @@ export default function SocialNav() {
       <Fab
         size="small"
         sx={{
-          width: {  sm: '32px' ,md:'50px'},
-          height: {  sm: '32px' ,md:'50px'},
+          width: {  sm: '32px' ,md:'40px'},
+          height: {  sm: '32px' ,md:'40px'},
           '& svg': { fontSize: { xs: '20px', sm: '30px' } }
         }}
         style={{ backgroundColor: "#f8d022", color: 'black' }}
