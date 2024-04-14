@@ -2,15 +2,16 @@ import React from 'react';
 import { Carousel, Card } from 'react-bootstrap';
 import review from './images/review.png';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-
+import Typography from '@mui/material/Typography';
 function Reviews() {
   return (
-    <div id='review' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', padding: '20px' }}>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <img src={review} alt="Review GIF" style={{ width: '100%', maxWidth: '600px', height: 'auto', objectFit: 'cover' }} />
+    <div id='review' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+        
+        <img src={review} alt="Review GIF" style={{ width: '100%', maxWidth: '500px', height: 'auto', objectFit: 'cover' }} />
+        
         <Carousel controls={false} indicators={false} style={{ width: '100%', maxWidth: '400px', marginBottom: '20px' }}>
           <Carousel.Item>
-            <Card style={{ backgroundColor: 'transparent', borderColor: 'transparent', color: 'white' }}>
+            <Card style={{ backgroundColor: 'black', borderColor: 'black', color: 'white' }}>
               <Card.Body>
                 <blockquote className="blockquote mb-0">
                   <p><FaQuoteLeft style={{ color: '#f8d022' }} />
@@ -23,8 +24,9 @@ function Reviews() {
             </Card>
           </Carousel.Item>
           <Carousel.Item>
-            <Card style={{ backgroundColor: 'transparent', borderColor: 'transparent', color: 'white' }}>
+            <Card style={{ backgroundColor: 'black', borderColor: 'black', color: 'white' }}>
               <Card.Body>
+                
                 <blockquote className="blockquote mb-0">
                   <p><FaQuoteLeft style={{ color: '#f8d022' }} />
                     Innovative strategies, impressive ROI. Enhanced social media presence, higher engagement and brand loyalty. Game-changer for business growth.
@@ -36,7 +38,7 @@ function Reviews() {
             </Card>
           </Carousel.Item>
           <Carousel.Item>
-            <Card style={{ backgroundColor: 'transparent', borderColor: 'transparent', color: 'white' }}>
+            <Card style={{ backgroundColor: 'black', borderColor: 'black', color: 'white' }}>
               <Card.Body>
                 <blockquote className="blockquote mb-0">
                   <p><FaQuoteLeft style={{ color: '#f8d022' }} />
@@ -50,7 +52,6 @@ function Reviews() {
           </Carousel.Item>
         </Carousel>
       </div>
-    </div>
   );
 }
 

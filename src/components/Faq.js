@@ -8,8 +8,8 @@ import Typewriter from 'typewriter-effect';
 import 'aos/dist/aos.css';
 export default function Faq() {
   return (
-    <div id="faq" minHeight='100vh' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    <Typography  sx={{ fontSize: { xs: '20px', md: '25px' }}} marginBottom={6} color='white'>
+    <div id="faq" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <Typography  sx={{ fontSize: { xs: '20px', md: '25px' }}} fontWeight='bold'marginBottom={6} color='black'>
       <Typewriter 
  onInit={(typewriter) => {
      typewriter

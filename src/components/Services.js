@@ -36,11 +36,11 @@ const cardData = [
 
 function Services() {
   return (
-    <Box id="services" minHeight="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="white">
-      <Typography sx={{ fontSize: { xs: '20px', md: '25px' }}} color={'white'} variant="h5" fontWeight='bold' marginBottom={'10px'} fontFamily="'Rubik', sans-serif">
+    <Box id="services" display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="white">
+      <Typography sx={{ fontSize: { xs: '20px', md: '25px' }}} color='black' variant="h5" fontWeight='bold' marginBottom={'10px'} fontFamily="'Rubik', sans-serif">
         How can I assist?
       </Typography>
-      <Typography sx={{ fontSize: { xs: '15px', md: '20px' }}} color={'rgba(255, 255, 255, 0.856)'} variant="h6" fontStyle='italic' marginBottom={'10px'} fontFamily="'Rubik', sans-serif">
+      <Typography sx={{ fontSize: { xs: '15px', md: '20px' }}} color='black' variant="h6" fontStyle='italic' marginBottom={'10px'} fontFamily="'Rubik', sans-serif">
         Empowering businesses with innovative digital strategies
       </Typography>
       <Container className="mt-4">
