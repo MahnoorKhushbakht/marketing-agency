@@ -59,8 +59,8 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' height='100vh'>
-      <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh" marginTop='100px'  marginBottom='20px'>
+    <div id='contact' >
+      <Box display="flex" justifyContent="center" alignItems="center" marginTop='100px'  marginBottom='20px'>
         <Card
           variant="filled"
           sx={cardStyle}
