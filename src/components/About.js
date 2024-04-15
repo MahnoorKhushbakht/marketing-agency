@@ -4,7 +4,7 @@ import { ChakraProvider,VStack,Text} from '@chakra-ui/react';
 import Footer from './Footer';
 export default function About(){
     return(
-        <div id='about' style={{  display: 'flex',flexDirection:'column', position: 'relative', alignItems: 'center', justifyContent: 'center'}}>
+        <div id='about' style={{  display: 'flex',flexDirection:'column', position: 'relative', alignItems: 'center', justifyContent: 'center',marginTop:'50px'}}>
         <ChakraProvider>
         <Container  color='black' width='70%' centerContent marginBottom='100px'>
         <VStack>
